@@ -186,11 +186,11 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command home/$USER/.config/i3/i3status.conf
+        status_command i3status -c /home/$USER/.config/i3/i3status.conf
 	position top
 	tray_output none
 	font pango: monospace 8
-	seperator symbol " "
+	separator_symbol " "
 }
 
 # ----------------------------------------------------------------------
