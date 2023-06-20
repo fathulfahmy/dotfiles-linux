@@ -1,1 +1,1 @@
-used by lightdm-gtk-greeter and i3
+used by lightdm-gtk-greeter and nitrogen
