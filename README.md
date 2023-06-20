@@ -1,2 +1,2 @@
 # dotfiles-i3wm
-i3wm configured
+TODO: add list of packages and dependencies to readme.md
