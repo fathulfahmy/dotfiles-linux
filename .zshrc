@@ -32,15 +32,14 @@ alias rm='rm -i'
 # easier to read disk
 alias df='df -h'     # human-readable sizes
 alias free='free -m' # show sizes in MB
-alias ls='ls --color=auto'
-alias code='code-insiders'
-alias vim='nvim'
 
 # get top process eating memory
 alias psmem='ps auxf | sort -nr -k 4 | head -5'
-
 # get top process eating cpu ##
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
+
+alias ls='ls --color=auto'
+alias vim='lvim'
 
 export EDITOR="lvim"
 export TERMINAL="alacritty"
@@ -55,8 +54,6 @@ export PATH=$HOME/.local/share/go/bin:$PATH
 export GOPATH=$HOME/.local/share/go
 export PATH=$HOME/.fnm:$PATH
 
-set t_Co=256
-
 # fnm
 export PATH="/home/patui/.local/share/fnm:$PATH"
 # eval "`fnm env`"
@@ -64,7 +61,7 @@ eval "$(fnm env --use-on-cd  --version-file-strategy=recursive)"
 
 # plugins
 plug "zsh-users/zsh-autosuggestions"
-plug "jeffreytse/zsh-vi-mode"
+plug "zap-zsh/vim"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/fzf"
 plug "zap-zsh/exa"
