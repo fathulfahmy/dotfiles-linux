@@ -96,9 +96,9 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Browser"
-set $ws2 "2: Terminal"
-set $ws3 "3: Files"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -124,25 +124,25 @@ bindsym $mod+0 workspace number $ws10
 # ---------- ASSIGN WORKSPACE TO MONITOR ----------
 
 # bind workspace to monitors
-workspace 1 output DP-0
-workspace 2 output DP-0
-workspace 3 output DP-0
-workspace 4 output DP-0
-workspace 5 output DP-0
+# workspace 1 output DP-0
+# workspace 2 output DP-0
+# workspace 3 output DP-0
+# workspace 4 output DP-0
+# workspace 5 output DP-0
 
-workspace 6 output DP-2
-workspace 7 output DP-2
-workspace 8 output DP-2
-workspace 9 output DP-2
-workspace 10 output DP-2
+# workspace 6 output DP-2
+# workspace 7 output DP-2
+# workspace 8 output DP-2
+# workspace 9 output DP-2
+# workspace 10 output DP-2
 
 # ---------- ASSIGN APPLICATION TO WORKSPACE ----------
 
 # Assign application to start on a specific workspace
 # you can find the class with the program xprop
-assign [class="Brave-browser"]  →1
-assign [class="Alacritty"]      →2   
-assign [class="Thunar"]         →3
+assign [class="Brave-browser"] 1
+assign [class="Alacritty"] 2   
+assign [class="Thunar"] 3
 
 # ---------- DEFAULT BINDINGS ----------
 
@@ -235,7 +235,7 @@ bar {
       status_command i3status -c /home/$USER/.config/i3/i3status.conf
 
       # Disable system tray icons
-      # tray_output none
+      tray_output none
 
       # ---------- i3WM STATUS BAR COLORS ----------
 
@@ -255,7 +255,6 @@ bar {
 
 # ---------- i3WM BORDER AND TITLEBAR COLORS ----------
 
-# i3wm
 # target                 title     bg    text   indicator  border
 client.focused           $mauve    $base $text  $rosewater $mauve
 client.focused_inactive  $base     $base $text  $rosewater $base
@@ -272,8 +271,7 @@ client.background        $mauve
 font pango:FiraCode Nerd Font 8
 
 # Monitor
-exec --no-startup-id xrandr --output DP-2 --left-of DP-0 --mode 1920x1080 --rate 144 
-exec --no-startup-id xrandr --output DP-0 --mode 1920x1080 --rate 144 
+exec --no-startup-id xrandr --output DP-2 --left-of DP-0 --mode 1920x1080 --rate 144 --output DP-0 --mode 1920x1080 --rate 144 
 
 # Keyboard
 exec setxkbmap us
@@ -320,10 +318,10 @@ bindsym XF86AudioStop exec --no-startup-id playerctl stop
 # ---------- SYSTEM TRAY ----------
 
 # wireless networks system tray icon
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 # bluetooth device system tray icon
-exec --no-startup-id blueman
+# exec --no-startup-id blueman
 # audio system tray icon
-exec --no-startup-id nm-pavucontrol
+# exec --no-startup-id nm-pavucontrol
 # battery level system tray icon
-exec --no-startup-id cbatticon
+# exec --no-startup-id cbatticon
