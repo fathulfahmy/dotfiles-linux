@@ -113,7 +113,6 @@ set $ws10 "10"
 # you can find the class with the program xprop
 assign [class="Brave-browser"]  → number "2: Browser"
 assign [class="Alacritty"]      → number "3: Terminal"
-assign [class="Thunar"]         → number "4: Files"
 
 # ---------- ASSIGN WORKSPACE TO MONITOR ----------
 
@@ -325,3 +324,10 @@ bindsym XF86AudioStop exec --no-startup-id playerctl stop
 # exec --no-startup-id nm-pavucontrol
 # battery level system tray icon
 # exec --no-startup-id cbatticon
+
+# ---------- SCREENSHOT ----------
+bindsym Print exec --no-startup-id flameshot screen
+bindsym Control+Print exec --no-startup-id flameshot launcher
+bindsym Control+Shift+Print exec --no-startup-id flameshot gui
+bindsym $mod+Control+Print exec --no-startup-id flameshot config
+# bindsym shift+Print exec --no-startup-id shutter
