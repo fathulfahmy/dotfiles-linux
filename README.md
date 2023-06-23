@@ -1,4 +1,4 @@
-# dotfiles-i3wm-sway
+# dotfiles-linux
 <img src="assets/rofi.png">
 <img src="assets/i3bar.png">
 TODO: add list of packages and dependencies to readme.md
