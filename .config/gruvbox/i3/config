@@ -154,7 +154,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+# bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -255,8 +255,10 @@ bindsym Shift+Print exec --no-startup-id flameshot gui
 bindsym Control+Print exec --no-startup-id flameshot launcher
 bindsym $mod+Control+Print exec --no-startup-id flameshot config
 
-exec_always --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 144 --left-of DP-0 --output DP-0 --mode 1920x1080 --rate 144
+# exec_always --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 144 --left-of DP-0 --output DP-0 --mode 1920x1080 --rate 144
 exec_always --no-startup-id picom --config $HOME/.config/picom.conf
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id dunst -conf $HOME/.config/dunst/dunstrc
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/wallpaper/gruvbox_hayakawa.jpg
+# automatically restart to detected autorandr config
+bindsym $mod+shift+r exec --no-startup-id autorandr -c && reload 
