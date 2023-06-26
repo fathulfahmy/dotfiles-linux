@@ -261,4 +261,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id dunst -conf $HOME/.config/dunst/dunstrc
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/wallpaper/gruvbox_hayakawa.jpg
 # automatically restart to detected autorandr config
-bindsym $mod+shift+r exec --no-startup-id autorandr -c && reload 
+bindsym $mod+shift+r exec --no-startup-id autorandr -c && restart 
