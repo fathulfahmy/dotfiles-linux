@@ -4,6 +4,14 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 lvim.plugins={
-    {"morhetz/gruvbox"}
+  {"morhetz/gruvbox"}
 }
 lvim.colorscheme="gruvbox"
+vim.opt.shiftwidth=4
+vim.opt.tabstop=4
+vim.opt.relativenumber=true
+vim.opt.clipboard="unnamedplus"
+lvim.keys.normal_mode['o']="o<esc>"
+lvim.keys.normal_mode['O']="O<esc>"
+lvim.keys.normal_mode['n']="nzz"
+lvim.keys.normal_mode['N']="Nzz"
