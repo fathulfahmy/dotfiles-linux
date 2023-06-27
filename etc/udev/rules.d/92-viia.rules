@@ -1,0 +1,1 @@
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0660", GROUP="0", TAG+="uaccess", TAG+="udev-acl"
