@@ -11,6 +11,7 @@
 #import:
 #  - /path/to/alacritty.yml
 
+# ------------------------------------------------------------------------------
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -23,6 +24,7 @@ env:
   # available, otherwise `xterm-256color` is used.
   TERM: alacritty
 
+# ------------------------------------------------------------------------------
 window:
   # Window dimensions (changes require restart)
   #
@@ -113,6 +115,7 @@ window:
   #   - None (default)
   #option_as_alt: None
 
+# ------------------------------------------------------------------------------
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
@@ -121,6 +124,7 @@ scrolling:
   # Scrolling distance multiplier.
   multiplier: 3
 
+# ------------------------------------------------------------------------------
 # Font configuration
 font:
   # Normal (roman) font face
@@ -196,9 +200,11 @@ font:
   #
   #builtin_box_drawing: true
 
+# ------------------------------------------------------------------------------
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
+# ------------------------------------------------------------------------------
 # Colors (Gruvbox dark)
 colors:
   # Default colors
@@ -230,6 +236,7 @@ colors:
     cyan:    '0x8ec07c'
     white:   '0xebdbb2'
 
+# ------------------------------------------------------------------------------
 # Colors (Tomorrow Night)
 #colors:
   # Default colors
@@ -379,6 +386,7 @@ colors:
   # regardless of their background color.
   #transparent_background_colors: false
 
+# ------------------------------------------------------------------------------
 # Bell
 #
 # The bell is rung every time the BEL control character is received.
@@ -420,6 +428,7 @@ colors:
   #
   #command: None
 
+# ------------------------------------------------------------------------------
 selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
@@ -428,6 +437,7 @@ selection:
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: true
 
+# ------------------------------------------------------------------------------
 #cursor:
   # Cursor style
   #style:
@@ -475,6 +485,7 @@ selection:
 # Live config reload (changes require restart)
 #live_config_reload: true
 
+# ------------------------------------------------------------------------------
 # Shell
 #
 # You can set `shell.program` to the path of your favorite shell, e.g.
@@ -489,6 +500,7 @@ selection:
 #  args:
 #    - --login
 
+# ------------------------------------------------------------------------------
 # Startup directory
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
@@ -498,6 +510,7 @@ selection:
 # Offer IPC using `alacritty msg` (unix only)
 #ipc_socket: true
 
+# ------------------------------------------------------------------------------
 #mouse:
   # Click settings
   #
@@ -510,6 +523,7 @@ selection:
   # If this is `true`, the cursor is temporarily hidden when typing.
   #hide_when_typing: false
 
+# ------------------------------------------------------------------------------
 # Hints
 #
 # Terminal hints can be used to find text or hyperlink in the visible part of
@@ -560,6 +574,7 @@ selection:
   #     key: U
   #     mods: Control|Shift
 
+# ------------------------------------------------------------------------------
 # Mouse bindings
 #
 # Mouse bindings are specified as a list of objects, much like the key
@@ -593,6 +608,7 @@ selection:
 #  - { mouse: Right,  mods: Control, action: ExpandSelection }
 #  - { mouse: Middle, mode: ~Vi,     action: PasteSelection  }
 
+# ------------------------------------------------------------------------------
 # Key bindings
 #
 # Key bindings are specified as a list of objects. For example, this is the
@@ -800,6 +816,7 @@ selection:
 # be mapped to the `ReceiveChar` action. Alternatively, you can use `None` for
 # a no-op if you do not wish to receive input characters for that binding.
 #
+# ------------------------------------------------------------------------------
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
 #key_bindings:
@@ -914,6 +931,7 @@ selection:
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
 
+# ------------------------------------------------------------------------------
 #debug:
   # Display the time it takes to redraw each frame.
   #render_timer: false
