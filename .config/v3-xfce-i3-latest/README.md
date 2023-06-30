@@ -3,6 +3,11 @@
 1. Download XFCE Distribution
 2. Download `i3` only (`i3 status` `i3 lock` `dmenu` is not needed)
 
+> :warning: Do not installed preconfigured or distributed i3wm to avoid conflicts with XFCE settings  
+> e.g.  
+> **do** `sudo dnf install i3 --setopt=install_weak_deps=False`   
+> **dont** `"i3 desktop"` or `@i3-desktop-environment`  
+
 ### Add i3WM Startup
 3. Open `Session and Startup`
 4. Select `Application Autostart`
