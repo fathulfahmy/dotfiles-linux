@@ -9,6 +9,7 @@ v3 xfce i3 (latest)
 - Bar: Xfce4 Panel
 - Icon: Papirus
 - Theme: Materia Theme
+- Fonts: Noto Sans, JetBrainsMono Nerd Font
 - Colorscheme: Catppuccin
 
 <details>
@@ -24,6 +25,7 @@ v3 xfce i3 (latest)
 - Music Player: ncmpcpp + mpd
 - Icon: Gruvbox Plus
 - Theme: Gruvbox GTK Theme
+- Fonts: Noto Sans, FiraCode Nerd Font
 - Colorscheme: Gruvbox
 
 </details>
@@ -39,6 +41,7 @@ v3 xfce i3 (latest)
 - Bar: i3 Status
 - Icon: Papirus
 - Theme: Catppuccin GTK Theme
+- Fonts: Noto Sans, FiraCode Nerd Font
 - Colorscheme: Catppuccin
 
 </details>
