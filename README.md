@@ -1,4 +1,5 @@
 # dotfiles-linux
-<img src="assets/rofi.png">
-<img src="assets/i3bar.png">
+<img src="xfce-showcase.png">
+<img src="gruvbox-showcase.png">
+<img src="catppuccin-home.png">
 TODO: add list of packages and dependencies to readme.md
