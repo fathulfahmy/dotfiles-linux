@@ -1,6 +1,6 @@
 # dotfiles-linux
 v3 xfce i3 (latest)  
-[Click here to learn how to setup XFCE with i3](https://github.com/fathulfahmy/dotfiles-linux/blob/main/.config/v3-xfce-i3-latest/readme-please.md)
+[Click here to learn how to setup XFCE with i3](https://github.com/fathulfahmy/dotfiles-linux/blob/main/.config/v3-xfce-i3-latest/README.md)
 
 <img src="assets/screenshots/xfce-showcase.png">
 
