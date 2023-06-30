@@ -36,9 +36,10 @@ Restart Style: Never
 ### Post configuration
 7. Remove all XFCE keyboard shortcuts through XFCE `Keyboard`
 8. Change theme through XFCE `Appearance`
-9. Change wallpaper through XFCE `Desktop`
-10. Bind Print Screen button to `xfce4-screenshooter` ([.config/i3/config](https://github.com/fathulfahmy/dotfiles-linux/blob/main/.config/v3-xfce-i3-latest/i3/config))
-11. Install `picom` if you are experiencing screen tearing ([.config/picom.conf](https://github.com/fathulfahmy/dotfiles-linux/blob/main/.config/v3-xfce-i3-latest/picom.conf))
+9. Install `lightdm-gtk-greeter-settings` to change login screen theme
+10. Change wallpaper through XFCE `Desktop`
+11. Bind Print Screen button to `xfce4-screenshooter` ([.config/i3/config](https://github.com/fathulfahmy/dotfiles-linux/blob/main/.config/v3-xfce-i3-latest/i3/config))
+12. Install `picom` if you are experiencing screen tearing ([.config/picom.conf](https://github.com/fathulfahmy/dotfiles-linux/blob/main/.config/v3-xfce-i3-latest/picom.conf))
 
 ### Reference
 - https://forum.endeavouros.com/t/tutorial-easy-setup-endeavour-xfce-i3-tiling-window-manager/13171
