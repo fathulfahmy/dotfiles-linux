@@ -1,5 +1,5 @@
 # dotfiles-linux
-v3 xfce i3 (latest)  
+Version 3 (XFCE i3)  
 [Click here to learn how to setup XFCE with i3](https://github.com/fathulfahmy/dotfiles-linux/blob/main/.config/v3-xfce-i3-latest/README.md)
 
 <img src="assets/screenshots/xfce-showcase.png">
@@ -14,7 +14,7 @@ v3 xfce i3 (latest)
 
 <details>
 
-<summary>v2 i3wm Gruvbox</summary>
+<summary>Version 2 (i3wm Gruvbox)</summary>
 
 <img src="assets/screenshots/gruvbox-showcase.png">
   
@@ -32,7 +32,7 @@ v3 xfce i3 (latest)
 
 <details>
 
-<summary>v1 i3wm Catppuccin</summary>
+<summary>Version 1 (i3wm Catppuccin)</summary>
 
 <img src="assets/screenshots/catppuccin-home.png">
   
