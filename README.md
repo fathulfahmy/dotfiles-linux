@@ -1,6 +1,6 @@
 # dotfiles-linux
 Version 3 (XFCE i3)  
-[Click here to learn how to setup XFCE with i3](https://github.com/fathulfahmy/dotfiles-linux/blob/main/.config/i3/version3-xfce-i3/README.md)
+[Click here to learn how to setup XFCE with i3](https://gist.github.com/fathulfahmy/61910e84b99b38009ad9268811e4aa2a)
 
 <img src="assets/screenshots/xfce-showcase.png">
 
