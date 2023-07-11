@@ -16,8 +16,8 @@ compinit
 # ---------------------------------------------------------------------
 
 export TERM="alacritty"
-export EDITOR="lvim"
-export MANPAGER="lvim +Man!"
+export EDITOR="nvim"
+export MANPAGER="nvim +Man!"
 
 # If not running interactively, don't do anything
 # [[ $- != *i* ]] && return
@@ -32,10 +32,6 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -d "$HOME/.emacs.d/bin" ] ;
-  then PATH="$HOME/.emacs.d/bin:$PATH"
-fi
-
 if [ -d "$HOME/Applications" ] ;
   then PATH="$HOME/Applications:$PATH"
 fi
@@ -44,10 +40,8 @@ if [ -d "/var/lib/flatpak/exports/bin/" ] ;
   then PATH="/var/lib/flatpak/exports/bin/:$PATH"
 fi
 
-if [ -d "$HOME/.config/emacs/bin/" ] ;
-  then PATH="$HOME/.config/emacs/bin/:$PATH"
-fi
-
+export PATH="$PATH:$HOME/go/bin/"
+export GOPATH=$HOME/go
 # ---------------------------------------------------------------------
 ### SETTING OTHER ENVIRONMENT VARIABLES
 if [ -z "$XDG_CONFIG_HOME" ] ; then
@@ -129,7 +123,7 @@ up () {
 
 # ---------------------------------------------------------------------
 # vim and emacs
-alias vim="lvim"
+alias vim="nvim"
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -152,28 +146,18 @@ alias psmem='ps auxf | sort -nr -k 4'
 alias pscpu='ps auxf | sort -nr -k 3'
 
 # git
-alias gaddup='git add -u'
-alias gaddall='git add .'
-alias gbranch='git branch'
-alias gcheckout='git checkout'
-alias gclone='git clone'
-alias gcommit='git commit -m'
-alias gfetch='git fetch'
+alias gau='git add -u'
+alias gaa='git add .'
+alias gbr='git branch'
+alias gco='git checkout'
+alias gcl='git clone'
+alias gcm='git commit -m'
+alias gf='git fetch'
 alias gpull='git pull origin'
 alias gpush='git push origin'
 alias gstat='git status'  # 'status' is protected name so using 'stat' instead
 alias gtag='git tag'
-alias gnewtag='git tag -a'
-
-alias yta-aac="yt-dlp --extract-audio --audio-format aac "
-alias yta-best="yt-dlp --extract-audio --audio-format best "
-alias yta-flac="yt-dlp --extract-audio --audio-format flac "
-alias yta-m4a="yt-dlp --extract-audio --audio-format m4a "
-alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
-alias yta-opus="yt-dlp --extract-audio --audio-format opus "
-alias yta-vorbis="yt-dlp --extract-audio --audio-format vorbis "
-alias yta-wav="yt-dlp --extract-audio --audio-format wav "
-alias ytv-best="yt-dlp -f bestvideo+bestaudio "
+alias gntag='git tag -a'
 
 # ---------------------------------------------------------------------
 eval "$(starship init zsh)"
@@ -182,3 +166,7 @@ eval "$(starship init zsh)"
 # fnm
 export PATH="/home/patui/.local/share/fnm:$PATH"
 eval "`fnm env`"
+# rust
+. "$HOME/.cargo/env"
+
+
