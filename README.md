@@ -1,3 +1,5 @@
+> ⭐ this repo if 💖 like it.
+
 # dotfiles-linux
 Version 3 (XFCE i3)  
 [Click here to learn how to setup XFCE with i3](https://gist.github.com/fathulfahmy/61910e84b99b38009ad9268811e4aa2a)
